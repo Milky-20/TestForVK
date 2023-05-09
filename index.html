@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scripts/index.js"/>
     <link rel="stylesheet" href="./styles/style.css"/>
     <title>Бронирование</title>
 </head>
@@ -15,7 +14,7 @@
       <div>
       <p>Выберите башню</p>
       <label>
-<select>
+<select name="tower">
   <option value="tower-A">Башня А</option>
   <option value="tower-B">Башня Б</option>
 </select>
@@ -24,7 +23,7 @@
 <div>
   <p>Выберите этаж</p>
   <label>
-<select>
+<select name="floor">
   <option value="3">3 этаж</option>
   <option value="4">4 этаж</option>
   <option value="5">5 этаж</option>
@@ -58,7 +57,7 @@
 <div>
   <p>Выберите переговорную комнату</p>
   <label>
-<select>
+<select name="room">
   <option value="№1">Комната №1</option>
   <option value="№2">Комната №2</option>
   <option value="№3">Комната №3</option>
@@ -72,18 +71,19 @@
 </select>
 </label>
 </div>
-<div class="container-date">
+<div class="container-date" name="data">
 <p>Выберите дату и время</p>
 <input type="datetime-local" class="container-date-time" value="date">
 </div>
 </div>
-<div class="container-comment">
+<div class="container-comment" name="comments">
 <textarea placeholder="Ваш Комментарий" class="container-comment-text" value="comment"></textarea>
 </div>
 <div class="buttons">
-<button class="buttons-clear">Очистить</button>
+<button id="buttons-clear" class="buttons-clear" type="submit">Очистить</button>
 <button class="buttons-send" type="submit">Отправить</button>
 </div>
     </div>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

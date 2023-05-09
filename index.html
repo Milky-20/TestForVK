@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scripts/index.js"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <title>Бронирование</title>
+</head>
+<body>
+    <div class="container" id="container-forma" action="/apply/" method="POST">
+      <h2>Чтобы забронировать башню, заполните форму</h2>
+      <div class="container-choice-first">
+      <div>
+      <p>Выберите башню</p>
+      <label>
+<select>
+  <option value="tower-A">Башня А</option>
+  <option value="tower-B">Башня Б</option>
+</select>
+</label>
+</div>
+<div>
+  <p>Выберите этаж</p>
+  <label>
+<select>
+  <option value="3">3 этаж</option>
+  <option value="4">4 этаж</option>
+  <option value="5">5 этаж</option>
+  <option value="6">6 этаж</option>
+  <option value="7">7 этаж</option>
+  <option value="8">8 этаж</option>
+  <option value="9">9 этаж</option>
+  <option value="10">10 этаж</option>
+  <option value="11">11 этаж</option>
+  <option value="12">12 этаж</option>
+  <option value="13">13 этаж</option>
+  <option value="14">14 этаж</option>
+  <option value="15">15 этаж</option>
+  <option value="16">16 этаж</option>
+  <option value="17">17 этаж</option>
+  <option value="18">18 этаж</option>
+  <option value="19">19 этаж</option>
+  <option value="20">20 этаж</option>
+  <option value="21">21 этаж</option>
+  <option value="22">22 этаж</option>
+  <option value="23">23 этаж</option>
+  <option value="24">24 этаж</option>
+  <option value="25">25 этаж</option>
+  <option value="26">26 этаж</option>
+  <option value="27">27 этаж</option>
+</select>
+</label>
+</div>
+</div>
+<div class="container-choice-second">
+<div>
+  <p>Выберите переговорную комнату</p>
+  <label>
+<select>
+  <option value="№1">Комната №1</option>
+  <option value="№2">Комната №2</option>
+  <option value="№3">Комната №3</option>
+  <option value="№4">Комната №4</option>
+  <option value="№5">Комната №5</option>
+  <option value="№6">Комната №6</option>
+  <option value="№7">Комната №7</option>
+  <option value="№8">Комната №8</option>
+  <option value="№9">Комната №9</option>
+  <option value="№10">Комната №10</option>
+</select>
+</label>
+</div>
+<div class="container-date">
+<p>Выберите дату и время</p>
+<input type="datetime-local" class="container-date-time" value="date">
+</div>
+</div>
+<div class="container-comment">
+<textarea placeholder="Ваш Комментарий" class="container-comment-text" value="comment"></textarea>
+</div>
+<div class="buttons">
+<button class="buttons-clear">Очистить</button>
+<button class="buttons-send" type="submit">Отправить</button>
+</div>
+    </div>
+</body>
+</html>

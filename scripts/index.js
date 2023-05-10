@@ -7,8 +7,8 @@ let user = {
     tower: document.getElementById('tower').value,
     floor: document.getElementById('floor').value,
     room: document.getElementById('room').value,
-    data: document.getElementById('data').value,
-    comments: document.getElementById('comments').value,
+    data: document.querySelector('.container-date-time').value,
+    comments: document.getElementById('container-comment-text').value,
 }
 let userJson = JSON.stringify(user);
 console.log(userJson);

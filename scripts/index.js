@@ -17,7 +17,10 @@ console.log(userJson);
 const textarea = document.querySelector('container-comment-text');
 const button = document.querySelector('buttonsClear');
 
-buttonsClear.addEventListener('click', () => {
-    const formData = new FormData();
-    form.formData = formData;
-  });
+buttonsClear.addEventListener('click', function(){
+    document.getElementById("data").value = '';
+    document.getElementById("container-comment-text").value = '';
+    document.getElementById("tower").value = '';
+    document.getElementById("floor").value = '';
+    document.getElementById("room").value = '';
+  })
